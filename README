@@ -1,4 +1,4 @@
-*Based on docker files in https://github.com/irods/contrib, adapted for the needs of our local test system*
+Based on docker files in https://github.com/irods/contrib, adapted for the needs of our local test system
 
 This set of files can be used to create a Docker image of a standalone iRODS iCAT server
 or an iCAT server paired with the idrop-web2 web-based graphical client.

@@ -55,6 +55,10 @@ RUN usermod -G admin -a irods
 
 #change irods user's irodsEnv file to point to localhost, since it was configured with a transient Docker container's hostname
 RUN sed -i 's/^irodsHost.*/irodsHost localhost/' /var/lib/irods/.irods/.irodsEnv
+# change the default zone to be 'ssUppnexZone'
+RUN sed -i 's/tempZone/ssUppnexZone/' /var/lib/irods/.irods/.irodsEnv
+# change the default user folder to have top directory 'proj' rather than 'home'
+RUN sed -i 's/\/home\//\/proj\//' /var/lib/irods/.irods/.irodsEnv
 
 ADD ./icat/runAll.sh /home/admin/runAll.sh
 RUN chmod a+x /home/admin/runAll.sh
