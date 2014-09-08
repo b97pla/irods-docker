@@ -7,8 +7,8 @@ ssUppnexZone
 /var/lib/irods/Vault
 TEMP_LOCAL_ZONE_SID
 temp_32_byte_key_for_agent__conn
-a2009002
-a2009002
+rods
+rods
 yes
 localhost
 5432
